@@ -39,7 +39,7 @@ stroke-width="2" fill="red"/>
 </svg>
 ```
 
-SVG 文件可通过以下标签嵌入 HTML 文档：<embed>、<object> 或者 <iframe>。
+SVG 文件可通过以下标签嵌入 HTML 文档： <embed> 、 <object>  或者 <iframe>。
 
 1.  使用 <embed> 标签，<embed> 标签被所有主流的浏览器支持，并允许使用脚本。但是如果需要创建合法的 XHTML，就不能使用 <embed>，任何 HTML 规范中都没有 <embed> 标签，所以我个人一般不推荐这种做法。
 
