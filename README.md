@@ -51,7 +51,7 @@ pluginspage="http://www.adobe.com/svg/viewer/install/" />
 ```
 注意：  HTML 页面中嵌入 SVG 时使用 <embed> 标签是 Adobe SVG Viewer 推荐的方法，pluginspage 属性指向下载插件的 URL。
 
-2. 使用 <object> 标签， <object> 标签是 HTML 4 的标准标签，被所有较新的浏览器支持。它的缺点是不允许使用脚本。我一般也不推荐使用这种方法。
+2.  使用 <object> 标签， <object> 标签是 HTML 4 的标准标签，被所有较新的浏览器支持。它的缺点是不允许使用脚本。我一般也不推荐使用这种方法。
 
 
 ```
