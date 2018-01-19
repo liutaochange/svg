@@ -39,9 +39,9 @@ stroke-width="2" fill="red"/>
 </svg>
 ```
 
-SVG 文件可通过以下标签嵌入 HTML 文档： <embed> 、 <object>  或者 <iframe>。
+SVG 文件可通过以下标签嵌入 HTML 文档： embed 、 object  或者 iframe。
 
-1.  使用 <embed> 标签，<embed> 标签被所有主流的浏览器支持，并允许使用脚本。但是如果需要创建合法的 XHTML，就不能使用 <embed>，任何 HTML 规范中都没有 <embed> 标签，所以我个人一般不推荐这种做法。
+1.  使用 embed 标签，embed 标签被所有主流的浏览器支持，并允许使用脚本。但是如果需要创建合法的 XHTML，就不能使用 <embed>，任何 HTML 规范中都没有 <embed> 标签，所以我个人一般不推荐这种做法。
 
 
 ```
@@ -49,9 +49,9 @@ SVG 文件可通过以下标签嵌入 HTML 文档： <embed> 、 <object>  或�
 type="image/svg+xml"
 pluginspage="http://www.adobe.com/svg/viewer/install/" />
 ```
-注意：  HTML 页面中嵌入 SVG 时使用 <embed> 标签是 Adobe SVG Viewer 推荐的方法，pluginspage 属性指向下载插件的 URL。
+注意：  HTML 页面中嵌入 SVG 时使用 embed 标签是 Adobe SVG Viewer 推荐的方法，pluginspage 属性指向下载插件的 URL。
 
-2.  使用 <object> 标签， <object> 标签是 HTML 4 的标准标签，被所有较新的浏览器支持。它的缺点是不允许使用脚本。我一般也不推荐使用这种方法。
+2.  使用 object 标签， object 标签是 HTML 4 的标准标签，被所有较新的浏览器支持。它的缺点是不允许使用脚本。我一般也不推荐使用这种方法。
 
 
 ```
@@ -61,13 +61,13 @@ codebase="http://www.adobe.com/svg/viewer/install/" />
 ```
 注意： codebase 属性指向下载插件的 URL。
 
-3.  使用 <iframe> 标签，<iframe> 标签可工作在大部分的浏览器中。但是iframe标签一直被诟病有安全性问题，也是慎用。
+3.  使用 iframe 标签，iframe 标签可工作在大部分的浏览器中。但是iframe标签一直被诟病有安全性问题，也是慎用。
 
 ```
 <iframe src="rect.svg" width="300" height="100"></iframe>
 ```
 
-4.  使用 <img> 标签，<img>标签几乎所有的浏览器都支持。而且img标签来引入svg也更合理，因为我们通常使用svg也是用做图形，更符合img的语义化。
+4.  使用 img 标签，img 标签几乎所有的浏览器都支持。而且img标签来引入svg也更合理，因为我们通常使用svg也是用做图形，更符合img的语义化。
 
 ```
 <img src="svg/iframe.svg" alt="svg图形" width="300" height="100">
@@ -111,9 +111,9 @@ codebase="http://www.adobe.com/svg/viewer/install/" />
 
 -
 
-我们接着说说svg的常用标签
+我们接着说说svg的常用标签:
 
-1. 矩形 <rect>，<rect> 标签可用来创建矩形，以及矩形的变种，rect 元素的 width 和 height 属性可定义矩形的高度和宽度，这里就以一个圆角矩形为例：
+1. 矩形 rect，rect 标签可用来创建矩形，以及矩形的变种，rect 元素的 width 和 height 属性可定义矩形的高度和宽度，这里就以一个圆角矩形为例：
 
 
 ```
@@ -124,7 +124,7 @@ codebase="http://www.adobe.com/svg/viewer/install/" />
 ```
 
 
-2. 圆形 <circle>， <circle> 标签可用来创建一个圆，cx和cy属性定义圆点的x和y坐标，r属性定义圆的半径。
+2. 圆形 circle， circle 标签可用来创建一个圆，cx和cy属性定义圆点的x和y坐标，r属性定义圆的半径。
 
 
 ```
@@ -134,7 +134,7 @@ codebase="http://www.adobe.com/svg/viewer/install/" />
 </svg>
 ```
 
-3. 椭圆 <ellipse>，<ellipse> 元素是用来创建一个椭圆，CX，CY分别为圆心点的x轴和y轴坐标，RX，RY分别代表水平方向的半径和垂直方向的半径。
+3. 椭圆 ellipse，ellipse 元素是用来创建一个椭圆，CX，CY分别为圆心点的x轴和y轴坐标，RX，RY分别代表水平方向的半径和垂直方向的半径。
 
 
 ```
@@ -143,7 +143,7 @@ codebase="http://www.adobe.com/svg/viewer/install/" />
 </svg>
 ```
 
-4. 直线 <line> ，<line> 元素是用来创建一个直线，x1 定义线条x 轴的开始，y1定义线条y 轴的开始，x2 定义线条 x 轴的结束，y2 定义线条 y 轴的结束。
+4. 直线 line ，line 元素是用来创建一个直线，x1 定义线条x 轴的开始，y1定义线条y 轴的开始，x2 定义线条 x 轴的结束，y2 定义线条 y 轴的结束。
 
 
 ```
@@ -153,7 +153,7 @@ codebase="http://www.adobe.com/svg/viewer/install/" />
 </svg>
 ```
 
-5. 多边形  <polygon> ，<polygon> 标签用来创建含有不少于三个边的图形。
+5. 多边形  polygon ，polygon 标签用来创建含有不少于三个边的图形。
 
 多边形是由直线组成，其形状是"封闭"的（所有的线条 连接起来）。
 
@@ -166,7 +166,7 @@ codebase="http://www.adobe.com/svg/viewer/install/" />
 ```
 
 
-6. 曲线 <polyline> ，<polyline> 元素是用于创建任何只有直线的形状。
+6. 曲线 polyline ，polyline 元素是用于创建任何只有直线的形状。
 
 
 ```
@@ -175,7 +175,7 @@ codebase="http://www.adobe.com/svg/viewer/install/" />
 </svg>
 ```
 
-7. 路径 <path> ，<path> 元素是用于定义一个路径。path元素的形状是通过属性d定义的，属性d的值是一个“命令+参数”的序列。大写表示绝对定位，小写表示相对定位。在绘制路径时比较复杂，可以议使用SVG编辑器来创建复杂的图形。
+7. 路径 path ，path 元素是用于定义一个路径。path元素的形状是通过属性d定义的，属性d的值是一个“命令+参数”的序列。大写表示绝对定位，小写表示相对定位。在绘制路径时比较复杂，可以议使用SVG编辑器来创建复杂的图形。
 
 - M = moveto，需要两个参数，分别是需要移动到的点的x轴和y轴的坐标。类似于移动画笔的位置。
 - L = lineto，需要两个参数，分别是一个点的x轴和y轴坐标，L命令将会在当前位置和新位置（L前面画笔所在的点）之间画一条线段。
@@ -206,7 +206,7 @@ a rx ry x-axis-rotation large-arc-flag sweep-flag dx dy
 </svg>
 ```
 
-8. 文本 <text> ，<text> 元素用于定义文本。
+8. 文本 text ，text 元素用于定义文本。
 - textPath 规定文本书写的方向
 
 
