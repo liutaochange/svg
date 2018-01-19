@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path id="path" d="M135,45 a10,10 0 0,0 100,20" />
+  </defs>
+  <text x="20" y="90" style="fill:red;">
+    <textPath xlink:href="#path">I love SVG I love web</textPath>
+  </text>
+</svg>
+

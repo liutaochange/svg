@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>svg 案例</title>
+    <style>
+        ul.wamp{
+            width:1000px;
+            margin: 0 auto;
+            overflow: hidden;
+            list-style: none;
+            display: flex;
+            display: -webkit-flex; /* Safari */
+            flex-direction: row;
+            flex-wrap:wrap;
+            justify-content: flex-start;
+        }
+        .wamp li{
+            width: 48%;
+            border: 1px solid #ccc;
+            -webkit-border-radius:5px;
+            -moz-border-radius:5px;
+            border-radius:5px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 5px 10px;
+            margin-right: 2%;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .wamp li p{
+            text-align: left;
+        }
+        .wamp li img{
+            vertical-align: middle;
+            width: 80%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<ul class="wamp">
+    <li>
+        <p>矩形</p>
+        <img src="svg/rect.svg" alt="">
+    </li>
+    <li>
+        <p>圆形</p>
+        <img src="svg/circle.svg" alt="">
+    </li>
+    <li>
+        <p>椭圆</p>
+        <img src="svg/ellipse.svg" alt="" width="500" height=" 200">
+    </li>
+    <li>
+        <p>直线</p>
+        <img src="svg/line.svg" alt="" >
+    </li>
+    <li>
+        <p>多边形</p>
+        <img src="svg/polygon.svg" alt="" >
+    </li>
+    <li>
+        <p>曲线</p>
+        <img src="svg/polyline.svg" alt="" >
+    </li>
+    <li>
+        <p>路径</p>
+        <img src="svg/path.svg" alt="" >
+    </li>
+    <li>
+        <p>文本</p>
+        <img src="svg/text.svg" alt="" >
+    </li>
+    <li>
+        <p>stroke 属性</p>
+        <img src="svg/stroke.svg" alt="" >
+    </li>
+</ul>
+</body>
+</html>
